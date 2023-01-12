@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img style="width: 40px; filter: invert(100%);" src="asset/img/logo.png" alt="logo"><span class="logo_text" style="color:white;margin-left: 6px;">logo</span>
+                </div>
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                 </button>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="https://www.fiverr.com/mastercode98">Hire Me</a></li>
+                    </ul>
+                    <img style="width: 30px; margin-left: 20px;" id="day_light" class="day_light" src="asset/img/moon.png">
+                    <!---->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="row">
+            <img class="avatar-back" src="asset/img/avatar-main-2.png" alt="avatar">
+            <img class="avatar" src="asset/img/avatar-main.png" alt="avatar">
+        </div>
+        <div class="row-2">
+            <div class="content">
+                <h2><span class="text_color">Hello!</span></h2>
+                <h1>I'm <span class="text_color">Gaurav Rajput</span></h1>
+                <p>Freelancer Website Designer & Full Stack Developer</p>
+            </div>
+            <span class="btn">
+                <button><span><a href="https://www.fiverr.com/mastercode98">Hire Me</a></span></button>
+            </span>
+        </div>    
+    </div>
+
+
+    <div class="about" id="about">
+        <div class="row-1">
+            <h2 class="heading">About</h2>
+            <p>I am a freelancer Website designer and Full Stack developer from India, I'm very passionate and 
+                dedicated to mywork. I have acquired the skills necessary to build a great and premium website.
+            </p>
+            <ul class="desc">
+                <li><span style="font-weight:bold; color: rgb(243, 104, 11);">Name</span>&emsp;:&emsp; Gaurav Rajput</li>
+                <li><span style="font-weight:bold; color: rgb(243, 104, 11);">Email</span> &emsp;:&emsp; susanjohnsusanjohn98@gmail.com</li>
+
+            </ul>
+        </div>
+        
+        <div class="row-2">
+            <img src="asset/img/avatar.png" alt="avatar">
+        </div>
+    </div>
+
+
+    <!--services section-->
+    <div class="services" id="services">
+        <div class="row-1">
+            <h2 class="heading">Services</h2>
+            <p class="below_heading">Other services that are provided by me.</p>
+            <div class="cards">
+            <div class=" card">
+                <img src="asset/img/icon/coding.png" alt="coding">
+                <p>Full Stack Devlopment</p>
+            </div>
+            <div class="card">
+                <img src="asset/img/icon/hosting.png" alt="domains">
+                <p>Website Hosting</p>
+            </div>
+            <div class="card">
+                <img src="asset/img/icon/domain.png" alt="hosting">
+                <p>Website designing</p>
+            </div>
+            <div class="card">
+                <img src="asset/img/icon/logo.png" alt="hosting">
+                <p>Logo Designing</p>
+            </div>
+            <div class="card">
+                <img src="asset/img/icon/poster.png" alt="hosting">
+                <p>Poster Designing</p>
+            </div>
+            <div class="card">
+                <img src="asset/img/icon/wordpress.png" alt="hosting">
+                <p>Wordpress Designing</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="works">
+        <h2 class="heading">Recent Works</h2>
+        <P class="below_heading">Some of the design & work that are complete recently</P>
+        <div class="gallery_row">
+            <div class="gallery_col">
+                <img class="gallery_img" src="asset/works/fit.jpg">
+                <img class="gallery_img" src="asset/works/rest.jpg">
+            </div>
+            <div class="gallery_col">
+                <img class="gallery_img" src="asset/works/fiver.jpg">
+                
+            </div>
+            <div class="gallery_col">
+                <img class="gallery_img" src="asset/works/web-design.jpg">
+                <img class="gallery_img" src="asset/works/template_travel.jpg">
+            </div>
+        </div>
+
+        <!-- The Modal  to show image on click-->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copyright | All Rights Reserved By Gaurav.</p>
+    </div>
+
+
+
+    <script type="text/javascript" src="asset/script.js"></script>
+</body>
+</html>
