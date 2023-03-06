@@ -4,7 +4,8 @@
     margin:0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    
+    scroll-behavior: smooth;
+
 }
 body{
     background-color: #e6f8f0;
@@ -290,8 +291,8 @@ a{
 }
 .services .cards .card:hover{
     transform: scale(1.1,1.1);
-    background: rgb(131,58,180);
     background: linear-gradient(144deg, rgba(131,58,180,0.7049019436876314) 0%, rgba(253,29,29,0.7805321957884717) 50%, rgba(252,176,69,1) 90%); 
+    transition: 0.3s;
 }
 /*services end*/
 
@@ -397,7 +398,17 @@ a{
 
 /*footer end*/
 
-
+/*animate on scroll*/
+.reveal{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
 
 
 
@@ -503,3 +514,6 @@ a{
         text-align: jusitfy;
     }
 }
+
+
+

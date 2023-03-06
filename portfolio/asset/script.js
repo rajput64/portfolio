@@ -40,3 +40,31 @@ const navToggler = document.querySelector(".nav-toggler");
         span.onclick = function(){
             modal.style.display= "none";
         }
+
+
+    //typed cdn javac
+        var typed = new Typed('#typed',{
+            stringsElement: '#typed-strings',
+            typeSpeed: 150,
+            backSpeed: 150,
+            fadeOut:false
+        });
+
+    //animate on scroll
+        function reveal(){
+            var reveals = document.querySelectorAll(".reveal");
+
+            for(var i = 0; i<reveals.length ; i++){
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if(elementTop < windowHeight - elementVisible){
+                    reveals[i].classList.add("active");
+                }else{
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal)
