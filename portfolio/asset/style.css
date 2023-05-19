@@ -330,7 +330,7 @@ a{
 .gallery_col{
     -ms-flex: 25%; /* IE10 */
     flex: 15%;
-    max-width: 25%;
+    width: 25%;
     padding: 0 4px;
 }
 .gallery_col img{
@@ -512,6 +512,18 @@ a{
     .about .row-1 .desc{
         font-size: rem;
         text-align: jusitfy;
+    }
+    .gallery_row{
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gallery_col{
+        width: 100%;
+    }
+    .gallery_col img{
+        width: 100%;
     }
 }
 
